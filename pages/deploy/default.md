@@ -27,7 +27,7 @@ sudo mv composer.phar /usr/local/bin/composer
 
 这里安装的是 MySQL 8， 使用 5.7 也是可以的，而且 5.7 安装会比较省事一点。
 
-```sh
+```shell
 sudo apt-get install mysql-server
 sudo mysql_secure_installation
 sudo mysql
@@ -35,7 +35,7 @@ sudo mysql
 
 然后会有一系列问题，这里可以参考我的回应：
 
-```sh
+```shell
 * Press y|Y for Yes, any other key for No: Y
 * Please enter 0 = LOW, 1 = MEDIUM and 2 = STRONG: 1 // 密码强度
 * Please set the password for root here.
@@ -65,7 +65,7 @@ ALTER USER 'newuser'@'%' IDENTIFIED WITH mysql_native_password BY 'password’;
 
 如果你需要的话
 
-```sh
+```shell
 sudo service apache2 stop
 
 sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
@@ -79,7 +79,7 @@ sudo rm -Rf 多个文件路径
 
 ### 安装
 
-```sh
+```shell
 git clone https://github.com/cashwarden/api.git cashwarden-api
 cd cashwarden-api
 cp .env.example .env
@@ -92,7 +92,7 @@ php yii generate/key # optional
 
 ### 配置 Nginx
 
-```sh
+```shell
 vim /etc/nginx/conf.d/api.cashwarden.com.conf
 ```
 
@@ -136,7 +136,7 @@ server {
 
 然后重启 nginx
 
-```sh
+```shell
 sudo service nginx reload
 ```
 
@@ -146,13 +146,13 @@ sudo service nginx reload
 
 WEB 项目部署可以直接拿 build 好的代码，自己 build 非常耗时，而且需要至少 2G 的内存：
 
-```
+```shell
 git clone -b gh-pages https://github.com/cashwarden/web.git cashwarden-web
 ```
 
 ### 配置 Nginx
 
-```sh
+```shell
 vim /etc/nginx/conf.d/cashwarden.com.conf
 ```
 
@@ -190,7 +190,7 @@ text/javascript;
 
 使用 [Certbot](https://certbot.eff.org/lets-encrypt/ubuntufocal-nginx) 
 
-```sh
+```shell
 sudo apt install snapd
 sudo snap install core; sudo snap refresh core
 sudo snap install --classic certbot
@@ -199,19 +199,19 @@ sudo ln -s /snap/bin/certbot /usr/bin/certbot
 
 自动安装 SSL 证书
 
-```sh
+```shell
 sudo certbot --nginx
 ```
 
 配置系统定时任务：
 
-```sh
+```shell
 sudo crontab -e
 ```
 
 添加
 
-```sh
+```shell
 1 0 1 * * sudo certbot renew --dry-run
 ```
 
@@ -223,6 +223,6 @@ sudo crontab -e
 
 在 API 项目根目录执行 
 
-```sh
+```shell
 php yii init/telegram
 ```
