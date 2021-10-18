@@ -6,7 +6,7 @@ export default {
     <>
       <span className="mr-2 font-extrabold hidden md:inline">CashWarden</span>
       <span className="text-gray-600 font-normal hidden md:inline">
-        CashWarden 使用指南
+        使用指南
       </span>
     </>
   ),
