@@ -26,7 +26,7 @@ sudo mysql
 
 然后会有一系列问题，这里可以参考我的回应：
 
-```
+```sh
 * Press y|Y for Yes, any other key for No: Y
 * Please enter 0 = LOW, 1 = MEDIUM and 2 = STRONG: 1 // 密码强度
 * Please set the password for root here.
@@ -40,7 +40,7 @@ Re-enter new password:
 
 为 root 设置密码（下面 password 为新密码，要求最高强度）：
 
-```
+```sql
 SELECT user,authentication_string,plugin,host FROM mysql.user;
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 FLUSH PRIVILEGES;
@@ -48,7 +48,7 @@ FLUSH PRIVILEGES;
 
 添加新用户（下面 newuser 是新用户，password 为新密码，要求最高强度）：
 
-```
+```sql
 ALTER USER 'newuser'@'%' IDENTIFIED WITH mysql_native_password BY 'password’;
 ```
 
@@ -190,19 +190,19 @@ sudo ln -s /snap/bin/certbot /usr/bin/certbot
 
 自动安装 SSL 证书
 
-```
+```sh
 sudo certbot --nginx
 ```
 
 配置系统定时任务：
 
-```
+```sh
 sudo crontab -e
 ```
 
 添加
 
-```
+```sh
 1 0 1 * * sudo certbot renew --dry-run
 ```
 
@@ -214,6 +214,6 @@ sudo crontab -e
 
 在 API 项目根目录执行 
 
-```
+```sh
 php yii init/telegram
 ```
