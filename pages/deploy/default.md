@@ -7,7 +7,11 @@ API 项目是基于 Yii2 开发的，所以使用 [Yii2 部署方式](https://ww
 ### 安装 PHP7.4
 
 ```sh
-sudo apt install php7.4-fpm php7.4-common php7.4-mysql \ php7.4-xml php7.4-xmlrpc php7.4-curl php7.4-gd \ php7.4-imagick php7.4-cli php7.4-dev php7.4-imap \ php7.4-mbstring php7.4-opcache php7.4-redis \ php7.4-soap php7.4-zip -y
+sudo apt install php7.4-fpm php7.4-common php7.4-mysql \ 
+    php7.4-xml php7.4-xmlrpc php7.4-curl php7.4-gd \ 
+    php7.4-imagick php7.4-cli php7.4-dev php7.4-imap \ 
+    php7.4-mbstring php7.4-opcache php7.4-redis \ 
+    php7.4-soap php7.4-zip -y
 ```
 
 ### 安装 Composer
