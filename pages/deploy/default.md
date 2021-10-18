@@ -6,7 +6,7 @@ API 项目是基于 Yii2 开发的，所以使用 [Yii2 部署方式](https://ww
 
 ### 安装 PHP7.4
 
-```shell
+```sh
 sudo apt install php7.4-fpm php7.4-common php7.4-mysql \ php7.4-xml php7.4-xmlrpc php7.4-curl php7.4-gd \ php7.4-imagick php7.4-cli php7.4-dev php7.4-imap \ php7.4-mbstring php7.4-opcache php7.4-redis \ php7.4-soap php7.4-zip -y
 ```
 
@@ -18,7 +18,7 @@ sudo apt install php7.4-fpm php7.4-common php7.4-mysql \ php7.4-xml php7.4-xmlrp
 
 这里安装的是 MySQL 8， 使用 5.7 也是可以的，而且 5.7 安装会比较省事一点。
 
-```shell
+```sh
 sudo apt-get install mysql-server
 sudo mysql_secure_installation
 sudo mysql
@@ -56,7 +56,7 @@ ALTER USER 'newuser'@'%' IDENTIFIED WITH mysql_native_password BY 'password’;
 
 如果你需要的话
 
-```shell
+```sh
 sudo service apache2 stop
 
 sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
@@ -70,7 +70,7 @@ sudo rm -Rf 多个文件路径
 
 ### 安装
 
-```shell
+```sh
 git clone https://github.com/cashwarden/api.git cashwarden-api
 cd cashwarden-api
 cp .env.example .env
@@ -83,7 +83,7 @@ php yii generate/key # optional
 
 ### 配置 Nginx
 
-```shell
+```sh
 vim /etc/nginx/conf.d/api.cashwarden.com.conf
 ```
 
@@ -127,7 +127,7 @@ server {
 
 然后重启 nginx
 
-```shell
+```sh
 sudo service nginx reload
 ```
 
@@ -143,7 +143,7 @@ git clone -b gh-pages https://github.com/cashwarden/web.git cashwarden-web
 
 ### 配置 Nginx
 
-```shell
+```sh
 vim /etc/nginx/conf.d/cashwarden.com.conf
 ```
 
@@ -181,7 +181,7 @@ text/javascript;
 
 使用 [Certbot](https://certbot.eff.org/lets-encrypt/ubuntufocal-nginx) 
 
-```shell
+```sh
 sudo apt install snapd
 sudo snap install core; sudo snap refresh core
 sudo snap install --classic certbot
