@@ -89,7 +89,7 @@ vim /etc/nginx/conf.d/api.cashwarden.com.conf
 
 代码：
 
-```
+```conf
 server {
     charset utf-8;
     client_max_body_size 128M; ## listen for ipv4
@@ -149,7 +149,7 @@ vim /etc/nginx/conf.d/cashwarden.com.conf
 
 代码：
 
-```
+```conf
 server {
     charset utf-8;
     client_max_body_size 128M; ## listen for ipv4
