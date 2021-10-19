@@ -23,7 +23,7 @@ Web 的导航栏快捷输入框
 
 ### Telegram
 
-给 Telegram Bot 发消息（需要事先绑定）
+给 [Telegram Bot](https://t.me/CashwardenBot) 发消息（需要事先绑定）
 
 ![](https://blog-1251237404.cos.ap-guangzhou.myqcloud.com/20200904A2e1h7.png)
 
@@ -120,6 +120,7 @@ Web 的导航栏快捷输入框
 
 ## 最后说明
 
-规则属于个人名下，不同于共享账本中分类关键词
+- 分类属于账本，共享账本多个成员使用同一套分类规则
+- 规则和账户属于个人名下，不同于共享账本中分类关键词
 
 
