@@ -6,8 +6,8 @@
 
 CashWarden 是一款开源的资产管理系统
 
-- 官网地址： <https://cashwarden.com>
-- 源码地址： <https://github.com/cashwarden>
+- 官网地址： [https://cashwarden.com](https://cashwarden.com)
+- 源码地址： [https://github.com/cashwarden](https://github.com/cashwarden)
 
 ## 特性
 
@@ -31,7 +31,7 @@ CashWarden 是一款开源的资产管理系统
 
 Pro 版本暂时不开源，功能上它们是有区别的，具体可以看看 [Pricing](https://cashwarden.com/#/pricing/index)。
 
-目前 <https://cashwarden.com/> 运行的是 Pro 版本。
+目前 [https://cashwarden.com](https://cashwarden.com) 运行的是 Pro 版本。
 
 ### 开源版本还会再维护吗？
 
