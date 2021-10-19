@@ -8,6 +8,7 @@ CashWarden 是一款开源的资产管理系统
 
 - [官网地址](https://cashwarden.com)
 - [源码地址](https://github.com/cashwarden)
+- [Telegram 讨论组](https://t.me/cashwarden)
 
 ## 特性
 

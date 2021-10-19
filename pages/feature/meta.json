@@ -1,3 +1,15 @@
 {
-    "quick-record": "快速记账"
+    "quick-record": "快速记账",
+    "quick-update-balance": "快速更新余额",
+    "account": "账户",
+    "ledger": "账本",
+    "telegram": "Telegram",
+    "import-and-export": "导入导出功能",
+    "wish-list": "愿望清单",
+    "budget": "预算",
+    "recurrence": "定时",
+    "currency": "货币",
+    "tag": "标签",
+    "to-reimburse": "报销",
+    "review": "对账"
 }
