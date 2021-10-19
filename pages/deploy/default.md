@@ -144,11 +144,29 @@ sudo service nginx reload
 
 ### 安装
 
+**方式一：使用已编译好的代码（推荐）**
+
 WEB 项目部署可以直接拿 build 好的代码，自己 build 非常耗时，而且需要至少 2G 的内存：
 
 ```shell
 git clone -b gh-pages https://github.com/cashwarden/web.git cashwarden-web
 ```
+
+**方式二：自己编译**
+
+```shell
+git clone https://github.com/cashwarden/web.git cashwarden-web
+```
+
+本地确保有 nodejs 14.x 以上环境
+
+```
+npm ci
+npm install -g @angular/cli
+ng build --prod
+```
+
+`dist` 目录就是编译好的代码，是拿来部署的代码。
 
 ### 配置 Nginx
 
