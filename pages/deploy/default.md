@@ -158,9 +158,9 @@ git clone -b gh-pages https://github.com/cashwarden/web.git cashwarden-web
 git clone https://github.com/cashwarden/web.git cashwarden-web
 ```
 
-本地确保有 nodejs 14.x 以上环境
+本地确保有 [nodejs](https://nodejs.org/) 14.x 以上环境
 
-```
+```shell
 npm ci
 npm install -g @angular/cli
 ng build --prod
