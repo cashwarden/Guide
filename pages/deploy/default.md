@@ -86,7 +86,10 @@ cp .env.example .env
 composer install
 chmod 777 -R runtime/
 chmod 777 -R web/uploads/
+chmod 777 -R web/assets
 php yii migrate
+php yii queue-migrate
+php yii migrate --migrationPath=@yiier/userSetting/migrations/
 php yii generate/key # optional 
 ```
 
@@ -139,6 +142,15 @@ server {
 ```shell
 sudo service nginx reload
 ```
+
+### 配置定时任务
+
+推送 telegram 报告和配置定时记账
+
+```
+
+```
+
 
 ## WEB 项目
 
