@@ -145,10 +145,13 @@ sudo service nginx reload
 
 ### 配置定时任务
 
-推送 telegram 报告和配置定时记账
+推送 telegram 报告和配置定时记账，部署注意路径，参考代码：
 
-```
-
+```shell
+0 9 * * * /usr/bin/php /srv/www/cashwarden-api-pro/yii crontab/recurrence >> /tmp/recurrence.log 2>&1
+0 10 * * * /usr/bin/php /srv/www/cashwarden-api-pro/yii crontab/report yesterday >> /tmp/report.log 2>&1
+5 10 * * 1 /usr/bin/php /srv/www/cashwarden-api-pro/yii crontab/report last_week >> /tmp/report.log 2>&1
+10 10 1 * * /usr/bin/php /srv/www/cashwarden-api-pro/yii crontab/report last_month >> /tmp/report.log 2>&1
 ```
 
 
