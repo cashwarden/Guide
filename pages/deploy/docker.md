@@ -1,12 +1,17 @@
 # CashWarden Docker 部署
 
-## 部署
-
-### 准备环境
+## 准备环境
 
 ### 安装 Docker
 
-中国版安装
+```shell
+sudo curl -sSL https://get.docker.com/ | sh
+sudo curl -L https://github.com/docker/compose/releases/download/1.25.4/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose --version
+```
+
+### 中国版安装
 
 ```shell
 sudo curl -sSL https://get.daocloud.io/docker | sh
@@ -38,6 +43,8 @@ vim /etc/docker/daemon.json
 ```
 sudo systemctl daemon-reload && sudo systemctl restart docker
 ```
+
+## 安装
 
 ### 准备代码
 
@@ -72,6 +79,8 @@ docker-compose stop && docker-compose up -d
 ```
 
 访问 `http://localhost:81` 就可以使用了。
+
+## 其他可选操作
 
 ### HTTPS
 
