@@ -61,7 +61,7 @@ docker exec api php yii generate/key true
 
 ⚠️ 另外
 
-- 要修改 `.env` 中 `APP_URL` 的值，使用 Telegram 记账的时候要用到。「APP_URL=https://域名/api」，必须使用 HTTPS 协议。
+- 要修改 `.env` 中 `APP_URL` 的值，使用 Telegram 记账的时候要用到。`APP_URL=https://域名/api` ，必须使用 HTTPS 协议。
 - `YII_DEBUG` 和 `YII_ENV` 的值请根据情况修改。
 
 
@@ -71,7 +71,7 @@ docker exec api php yii generate/key true
 docker-compose stop && docker-compose up -d
 ```
 
-访问 <http://localhost:81> 就可以使用了。
+访问 `http://localhost:81` 就可以使用了。
 
 ### HTTPS
 
@@ -90,7 +90,7 @@ sudo ln -s /snap/bin/certbot /usr/bin/certbot
 vim /etc/nginx/sites-available/cashwarden
 ```
 
-```
+```conf
 server {
     charset utf-8;
     client_max_body_size 128M; ## listen for ipv4
