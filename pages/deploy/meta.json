@@ -1,4 +1,4 @@
 {
     "default": "分开部署方案",
-    "docker-compose": "Docker compose 部署方案"
+    "docker": "Docker 部署方案"
 }
