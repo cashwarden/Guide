@@ -55,6 +55,10 @@ Pro 版本暂时不开源，功能上它们是有区别的，具体可以看看 
 
 ### 2022-05-14
 
-- 【新增】[快速记账支持备注功能](/feature/quick-record#%E5%A4%87%E6%B3%A8)
-- 【优化】[快速记账使用 `=` 也可以修改余额](/feature/quick-update-balance)
+-【新增】[快速记账支持备注功能](/feature/quick-record#%E5%A4%87%E6%B3%A8)
+-【优化】[快速记账使用 `=` 也可以修改余额](/feature/quick-update-balance)
 
+
+### 2022-06-04
+
+- 【新增】日历图查看消费
