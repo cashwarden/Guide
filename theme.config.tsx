@@ -1,7 +1,11 @@
-export default {
-  github: 'https://github.com/cashwarden',
-  docsRepositoryBase: 'https://github.com/cashwarden/guide',
-  titleSuffix: ' – CashWarden',
+import React from "react";
+import { DocsThemeConfig } from 'nextra-theme-docs'
+
+const config: DocsThemeConfig = {
+  project:{
+    link: 'https://github.com/cashwarden',
+  },
+  docsRepositoryBase: 'https://github.com/cashwarden/guide/tree/main',
   logo: (
     <>
       <span className="mr-2 font-extrabold hidden md:inline">CashWarden</span>
@@ -55,11 +59,5 @@ export default {
       />
     </>
   ),
-  search: true,
-  prevLinks: true,
-  nextLinks: true,
-  footer: true,
-  footerEditLink: 'Edit this page on GitHub',
-  footerText: <>MIT {new Date().getFullYear()} © Nextra.</>,
-  unstable_faviconGlyph: '👋',
 }
+export default config
