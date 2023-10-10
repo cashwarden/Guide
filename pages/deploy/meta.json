@@ -1,4 +1,5 @@
 {
     "default": "分开部署方案",
-    "docker": "Docker 部署方案"
+    "docker": "Docker 部署方案",
+    "v2": "V2 分开部署方案"
 }
